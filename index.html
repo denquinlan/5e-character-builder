@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Character Builder</title>
+     <link rel="stylesheet" href="style.css"/>
+     <script src="js/main.js"></script>
+</head>
+<body>
+<h1>Build Your Character</h1>
+<div id="createForm">
+<form>
+     <div id="myname">
+     <label for="playname">Player Name:</label>
+     <input type="text" id="playname" name="playname">
+     </div>
+
+    <div id="mycharname">
+   <label for="charname">Character Name:</label> 
+   <input type="text" id="charname" name="charname">
+   </div>
+
+   <div id="myrace">
+    <label for="charrace">Race:</label>
+    <select id="charrace" name="charrace">
+        <option value="dragonborn">Dragonborn</option>
+        <option value="dwarf">Dwarf</option>
+        <option value="elf">Elf</option>
+        <option value="gnome">Gnome</option>
+        <option value="halfelf">Half-Elf</option>
+        <option value="halfling">Halfling</option>
+        <option value="halforc">Half-Orc</option>
+        <option value="human">Human</option>
+        <option value="tiefling">Tiefling</option>
+    </select>
+   </div>
+
+   <div id="myclass">
+   <label for="charclass">Class:</label>
+   <select id="charclass" name="charclass">
+        <option value="barbarian">Barbarian</option>
+        <option value="bard">Bard</option>
+        <option value="cleric">Cleric</option>
+        <option value="druid">Druid</option>
+        <option value="fighter">Fighter</option>
+        <option value="monk">Monk</option>
+        <option value="paladin">Paladin</option>
+        <option value="ranger">Ranger</option>
+        <option value="rogue">Rogue</option>
+        <option value="sorcerer">Sorcerer</option>
+        <option value="warlock">Warlock</option>
+        <option value="wizard">Wizard</option>
+   </select>
+   </div>
+
+   <div id="mylev">
+   <label for="charlvl">Level:</label>
+   <input type="number" min="1" max="20" id="charlvl" name="charlvl">
+    </div>
+
+    <div id="mybackground">
+   <label for="charback">Background:</label>
+   <select id="charback" name="charback">
+        <option value="acolyte">Acolyte</option>
+        <option value="charlatan">Charlatan</option>
+        <option value="criminal">Criminal</option>
+        <option value="entertainer">Entertainer</option>
+        <option value="folkhero">Folk Hero</option>
+        <option value="gladiator">Gladiator</option>
+        <option value="guildart">Guild Artisan</option>
+        <option value="guildmerc">Guild Merchant</option>
+        <option value="hermit">Hermit</option>
+        <option value="knight">Knight</option>
+        <option value="noble">Noble</option>
+        <option value="outlander">Outlander</option>
+        <option value="pirate">Pirate</option>
+        <option value="sage">Sage</option>
+        <option value="sailor">Sailor</option>
+        <option value="soldier">Solider</option>
+        <option value="spy">Spy</option>
+        <option value="urchin">Urchin</option>
+   </select></div>
+
+   <div id="myalign">
+    <label for="charalign">Alignment:</label>
+    <select id="charalign" name="charalign">
+     <option value="lg">Lawful Good</option>
+     <option value="ng">Neutral Good</option>
+     <option value="cg">Chaotic Good</option>
+     <option value="ln">Lawful Neutral</option>
+     <option value="tn">True Neutral</option>
+     <option value="cn">Chaotic Neutral</option>
+     <option value="le">Lawful Evil</option>
+     <option value="ne">Neutral Evil</option>
+     <option value="ce">Chaotic Evil</option>
+    </select>
+   </div>
+
+
+<div class="scores">
+     <ul>
+       <li>
+         <div class="score">
+           <label for="Strscore">Strength</label><input name="Strscore" placeholder="10" class="stat"/>
+         </div>
+         <div class="modifier">
+           <input name="Strmod" placeholder="+0" class="statmod"/>
+         </div>
+       </li>
+       <li>
+         <div class="score">
+           <label for="Dexscore">Dexterity</label><input name="Dexscore" placeholder="10" class="stat"/>
+         </div>
+         <div class="modifier">
+           <input name="Dexmod" placeholder="+0" class=statmod/>
+         </div>
+       </li>
+       <li>
+         <div class="score">
+           <label for="Conscore">Constitution</label><input name="Conscore" placeholder="10" class="stat"/>
+         </div>
+         <div class="modifier">
+           <input name="Conmod" placeholder="+0" class="statmod"/>
+         </div>
+       </li>
+       <li>
+         <div class="score">
+           <label for="Wisscore">Wisdom</label><input name="Wisscore" placeholder="10" class="stat"/>
+         </div>
+         <div class="modifier">
+           <input name="Wismod" placeholder="+0" />
+         </div>
+       </li>
+       <li>
+         <div class="score">
+           <label for="Intscore">Intelligence</label><input name="Intscore" placeholder="10" class="stat"/>
+         </div>
+         <div class="modifier">
+           <input name="Intmod" placeholder="+0" class="statmod"/>
+         </div>
+       </li>
+       <li>
+         <div class="score">
+           <label for="Charscore">Charisma</label><input name="Charscore" placeholder="10" class="stat"/>
+         </div>
+         <div class="modifier">
+           <input name="Charmod" placeholder="+0" class="statmod"/>
+         </div>
+       </li>
+     </ul>
+   </div>
+
+
+<div id="bttn">
+<button type="submit" id="subbuttn">Next Step</button>
+</div>
+
+</form>
+</div>
+</body>
+</html>
